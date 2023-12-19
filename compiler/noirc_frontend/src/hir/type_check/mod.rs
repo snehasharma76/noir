@@ -229,6 +229,7 @@ mod test {
     use iter_extended::vecmap;
     use noirc_errors::{Location, Span};
 
+    use crate::arena::{Arena, Index};
     use crate::graph::CrateId;
     use crate::hir::def_map::{ModuleData, ModuleId};
     use crate::hir::resolution::import::PathResolutionError;
@@ -442,7 +443,7 @@ mod test {
         }
 
         fn local_module_id(&self) -> LocalModuleId {
-            LocalModuleId(arena::Index::from_raw_parts(0, 0))
+            LocalModuleId(Index::from_raw_parts(0, 0))
         }
 
         fn module_id(&self) -> ModuleId {
@@ -492,7 +493,7 @@ mod test {
         let mut def_maps = BTreeMap::new();
         let file = FileId::default();
 
-        let mut modules = arena::Arena::new();
+        let mut modules = Arena::new();
         let location = Location::new(Default::default(), file);
         modules.insert(ModuleData::new(None, location, false));
 

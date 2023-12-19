@@ -31,7 +31,8 @@ mod test {
         hir::def_map::{CrateDefMap, LocalModuleId},
         parse_program,
     };
-    use arena::Arena;
+
+    use crate::arena::Arena;
     use fm::FileManager;
 
     pub(crate) fn has_parser_error(errors: &[(CompilationError, FileId)]) -> bool {

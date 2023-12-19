@@ -10,9 +10,8 @@ members = [
     "compiler/fm",
     "compiler/wasm",
     # Utility crates used by the Noir compiler
-    "compiler/utils/arena",
     "compiler/utils/iter-extended",
-    # Crates related to tooling built ontop of the Noir compiler
+    # Crates related to tooling built on top of the Noir compiler
     "tooling/backend_interface",
     "tooling/bb_abstraction_leaks",
     "tooling/lsp",
@@ -59,7 +58,6 @@ acvm_blackbox_solver = { version = "0.38.0", path = "acvm-repo/blackbox_solver",
 bn254_blackbox_solver = { version = "0.38.0", path = "acvm-repo/bn254_blackbox_solver", default-features = false }
 
 # Noir compiler workspace dependencies
-arena = { path = "compiler/utils/arena" }
 fm = { path = "compiler/fm" }
 iter-extended = { path = "compiler/utils/iter-extended" }
 noirc_driver = { path = "compiler/noirc_driver" }

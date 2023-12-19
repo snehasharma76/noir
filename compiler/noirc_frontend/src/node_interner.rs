@@ -1,10 +1,10 @@
 use std::collections::HashMap;
 
-use arena::{Arena, Index};
 use fm::FileId;
 use iter_extended::vecmap;
 use noirc_errors::{Location, Span, Spanned};
 
+use crate::arena::{Arena, Index};
 use crate::ast::Ident;
 use crate::graph::CrateId;
 use crate::hir::def_collector::dc_crate::{UnresolvedStruct, UnresolvedTrait, UnresolvedTypeAlias};

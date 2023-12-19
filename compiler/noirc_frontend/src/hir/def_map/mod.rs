@@ -1,3 +1,4 @@
+use crate::arena::{Arena, Index};
 use crate::graph::CrateId;
 use crate::hir::def_collector::dc_crate::{CompilationError, DefCollector};
 use crate::hir::Context;
@@ -5,7 +6,6 @@ use crate::macros_api::MacroProcessor;
 use crate::node_interner::{FuncId, NodeInterner, StructId};
 use crate::parser::{parse_program, ParsedModule, ParserError};
 use crate::token::{FunctionAttribute, SecondaryAttribute, TestScope};
-use arena::{Arena, Index};
 use fm::{FileId, FileManager};
 use noirc_errors::Location;
 use std::collections::BTreeMap;

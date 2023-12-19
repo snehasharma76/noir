@@ -209,13 +209,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a4668cab20f66d8d020e1fbc0ebe47217433c1b6c8f2040faf858554e394ace6"
 
 [[package]]
-name = "arena"
-version = "0.22.0"
-dependencies = [
- "generational-arena",
-]
-
-[[package]]
 name = "ark-bls12-381"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2712,9 +2705,9 @@ name = "noirc_frontend"
 version = "0.22.0"
 dependencies = [
  "acvm",
- "arena",
  "chumsky",
  "fm",
+ "generational-arena",
  "iter-extended",
  "log",
  "noirc_errors",

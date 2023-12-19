@@ -10,6 +10,8 @@
 #![warn(unreachable_pub)]
 #![warn(clippy::semicolon_if_nothing_returned)]
 
+mod arena;
+
 pub mod ast;
 pub mod graph;
 pub mod lexer;
