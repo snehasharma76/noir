@@ -9,8 +9,7 @@ members = [
     "compiler/noirc_printable_type",
     "compiler/fm",
     "compiler/wasm",
-    # Utility crates used by the Noir compiler
-    "compiler/utils/iter-extended",
+    "compiler/iter-extended",
     # Crates related to tooling built on top of the Noir compiler
     "tooling/backend_interface",
     "tooling/bb_abstraction_leaks",
@@ -59,7 +58,7 @@ bn254_blackbox_solver = { version = "0.38.0", path = "acvm-repo/bn254_blackbox_s
 
 # Noir compiler workspace dependencies
 fm = { path = "compiler/fm" }
-iter-extended = { path = "compiler/utils/iter-extended" }
+iter-extended = { path = "compiler/iter-extended" }
 noirc_driver = { path = "compiler/noirc_driver" }
 noirc_errors = { path = "compiler/noirc_errors" }
 noirc_evaluator = { path = "compiler/noirc_evaluator" }
